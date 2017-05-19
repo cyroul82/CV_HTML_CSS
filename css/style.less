@@ -1,3 +1,8 @@
+//out: ./style2.css
+//sourcemap: true
+//compress: true
+//main: ./style.less
+
 *{
   box-sizing: border-box;
   /*border: 1px solid rgba(0, 0, 0, 0.3);*/
@@ -20,6 +25,7 @@ body{
   background-color: rgb(18,33,52);
   color: white;
 }
+
 header{
   margin-top: 20px;
   text-align: center;
@@ -74,55 +80,58 @@ nav ul{
 /*Profil Panel */
  .sideCategory {
    margin: 20px 0 0 30px;
+
+   h3{
+     display: inline-block;
+     margin-left: 10px;
+     margin-right: 10px;
+   }
+
+   img{
+     width:30px;
+     height: 30px;
+   }
+
+   p {
+     text-indent: 3em;
+     text-align: justify;
+     margin-top: 0;
+     margin-right: 50px;
+     margin-left: 20px;
+   }
+
+   hr{
+     background-color: #FFF;
+     flex:1;
+     width: 100%;
+   }
+
+   .item {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     margin-right: 50px;
+     margin-left: 20px;
+     margin-bottom: 10px;
+   }
+
+   .spaceItem {
+     margin-left: 10px;
+   }
+
+   .itemSize {
+     width: 8em;
+   }
+
+   .itemLink {
+     text-decoration: none;
+     color: #FFF;
+   }
+
+   .location {
+     align-items: flex-start;
+   }
  }
- .sideCategory h3{
-   display: inline-block;
-   margin-left: 10px;
-   margin-right: 10px;
- }
- .sideCategory img{
-   width:30px;
-   height: 30px;
- }
-  .sideCategory p {
-    text-indent: 3em;
-    text-align: justify;
-    margin-top: 0;
-    margin-right: 50px;
-    margin-left: 20px;
-  }
-
-  .sideCategory hr{
-    background-color: #FFF;
-    flex:1;
-    width: 100%;
-  }
-
-  .sideCategory .item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 50px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-
-  .sideCategory .spaceItem {
-    margin-left: 10px;
-  }
-
-  .sideCategory .itemSize {
-    width: 8em;
-  }
-
-  .sideCategory  .itemLink {
-    text-decoration: none;
-    color: #FFF;
-  }
-
-  .sideCategory .location {
-    align-items: flex-start;
-  }
 
   .barProgress {
     border: 1px solid #FFF;
