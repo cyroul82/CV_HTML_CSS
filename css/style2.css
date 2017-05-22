@@ -10,6 +10,7 @@ body {
 #container {
   width: 900px;
   display: flex;
+  padding-top: 20px;
   margin: auto;
 }
 p {
@@ -19,7 +20,20 @@ p {
 .sidePanel {
   flex: 1;
   background-color: #122134;
+  position: relative;
   color: #e2e1e4;
+}
+.sidePanel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid;
+  border-width: 0 0 40px 40px;
+  border-color: #e2e1e4 #fff;
+  border-radius: 0 0 0 2px;
+  display: block;
+  width: 0;
 }
 /*Profil Panel */
 .sideCategory {

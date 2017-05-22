@@ -22,6 +22,7 @@ body{
 #container {
   width: 900px;
   display: flex;
+  padding-top: 20px;
   margin: auto;
 }
 
@@ -33,7 +34,21 @@ p {
 .sidePanel{
   flex:1;
   background-color: @background_side_color;
+  position: relative;
   color: @font_side_color;
+}
+
+.sidePanel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid;
+  border-width: 0 0 40px 40px;
+  border-color: @font_side_color #fff;
+  border-radius: 0 0 0 2px;
+  display: block;
+  width: 0;
 }
 
 /*Profil Panel */
