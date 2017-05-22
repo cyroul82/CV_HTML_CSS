@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 body {
   font-family: 'Open Sans', serif;
@@ -232,4 +231,9 @@ nav li {
 .training .dateItem {
   position: absolute;
   right: 0;
+}
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
