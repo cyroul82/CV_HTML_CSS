@@ -225,32 +225,35 @@ nav li {
 }
 .training {
   margin: 0;
-  padding-left: 20px;
 }
 .training ul {
   margin: 0;
 }
 .training li {
+  list-style-type: none;
+}
+.partDesc {
+  display: flex;
   position: relative;
-  margin: 0 20px 15px 0;
 }
-.training li img {
-  vertical-align: middle;
-  position: absolute;
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
+.partDesc .desc {
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
-.training strong {
+.partDesc .desc strong {
   text-transform: uppercase;
 }
-.training .subItem {
-  margin-top: 5px;
-  margin: 5px 0 10px 10px;
+.partDesc .desc .subItem {
+  margin-left: 30px;
 }
-.training .dateItem {
+.partDesc .logo {
   position: absolute;
   right: 0;
+  margin-right: 30px;
+}
+.partDesc .logo img {
+  width: 30px;
+  height: 30px;
 }
 .language {
   display: flex;

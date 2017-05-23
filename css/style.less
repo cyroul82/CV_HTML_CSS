@@ -276,40 +276,52 @@ nav {
 
  .training {
    margin:0;
-   padding-left: 20px;
+  //  padding-left: 20px;
    ul{
      margin:0;
 
    }
 
    li {
-     position: relative;
-      margin: 0 20px 15px 0;
-
-      img{
-        vertical-align: middle;
-        position: absolute;
-        margin-right: 10px;
-        width: 30px;
-        height: 30px;
-      }
+     list-style-type: none;
 
    }
 
-   strong {
-     text-transform: uppercase;
+ }
+
+ .partDesc {
+   display: flex;
+   position: relative;
+   .year{
+     .dateItem{
+
+     }
+   }
+   .desc {
+     margin-left: 20px;
+     margin-bottom: 20px;
+     strong {
+       text-transform: uppercase;
+     }
+
+     .secondLineItem{
+
+     }
+
+     .subItem {
+       margin-left: 30px;
+     }
    }
 
-   .subItem {
-     margin-top: 5px;
-     margin: 5px 0 10px 10px;
-   }
-
-   .dateItem{
+   .logo {
+    //  display: none;
      position: absolute;
      right: 0;
-   }
-   .secondLineItem{
+     margin-right: 30px;
+     img{
+       width: 30px;
+       height: 30px;
+     }
    }
  }
 
