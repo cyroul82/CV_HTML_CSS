@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Cyril RAT</title>
-    <link rel="stylesheet" href="css/style2.css">
+
+    <!-- <link rel="stylesheet" href="css/style2.css"> -->
+    <link rel="stylesheet" href="css/styleresponsive.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div id="container">
@@ -14,65 +18,64 @@
           <div class="mainTitle">
             <div class="logo">
               <img src="img/me.gif" alt="Photo Cyril RAT"/>
-              <h1>Cyril RAT</h1>
+              <h2>Cyril RAT</h2>
             </div>
 
             <div class="subtitle">
-              <h2>Concepteur Développeur</h2>
+              <h1>Concepteur Développeur</h1>
             </div>
           </div>
-          <!-- <nav>
-            <ul>
-              <li>Home</li>
-              <li>Contact</li>
-              <li>Portfolio</li>
-            </ul>
-          </nav> -->
         </header>
 
+        <section id="personal">
         <!-- Profil -->
-        <div class="sideCategory">
+        <div id="profil" class="sideCategory">
           <div class="subtitle">
             <img src="img/profil.png" alt="icon profil"/>
             <h3>Profil</h3>
             <hr>
           </div>
-
-          <p>
-            Je propose une approche de résolution des problèmes, associé à une bonne communication.
-            Je suis ouvert aux nouveaux défis qui me donnent l'occasion d'élargir mes compétences et d'approfondir mes connaissances.
-          </p>
-
+          <div class="detail">
+            <p>
+              Je propose une approche de résolution des problèmes, associé à une bonne communication.
+              Je suis ouvert aux nouveaux défis qui me donnent l'occasion d'élargir mes compétences et d'approfondir mes connaissances.
+            </p>
+          </div>
         </div>
 
         <!-- Contact -->
-        <div class="sideCategory">
+
+        <div id="contact" class="sideCategory">
           <div class="subtitle">
             <img src="img/contact.png" alt="icon contact"/>
             <h3>Contact</h3>
             <hr>
           </div>
-          <div class="item">
-            <img src="img/telephone_.png" alt="icon telephone"/>
-            <span class="spaceItem">06 45 24 84 03</span>
-          </div>
-          <div class="item">
-            <img src="img/email_.png" alt="icon telephone"/>
-            <span class="spaceItem"> <a href="mailto:cyril.rat@gmail.com" title="Envoyer un email" class="itemLink">cyril.rat@gmail.com</a></span>
-          </div>
-          <div class="item location">
-            <img src="img/location_.png" alt="icon location"/>
-            <span class="spaceItem">109 Rue de la soleillette</br>Les Lauriers</br>83700 Saint-Raphaël</span>
+          <div class="detail">
+            <div class="item">
+              <img src="img/telephone_.png" alt="icon telephone"/>
+              <span class="spaceItem">06 45 24 84 03</span>
+            </div>
+            <div class="item">
+              <img src="img/email_.png" alt="icon telephone"/>
+              <span class="spaceItem"> <a href="mailto:cyril.rat@gmail.com" title="Envoyer un email" class="itemLink">cyril.rat@gmail.com</a></span>
+            </div>
+            <div class="item location">
+              <img src="img/location_.png" alt="icon location"/>
+              <span class="spaceItem">109 Rue de la soleillette</br>Les Lauriers</br>83700 Saint-Raphaël</span>
+            </div>
           </div>
         </div>
 
+
         <!-- Personal Skills -->
-        <div class="sideCategory">
+        <div id="personalskills" class="sideCategory">
           <div class="subtitle">
             <img src="img/iconPersonalSkill.png" alt="icon contact"/>
             <h3>Compétences Personnelles</h3>
             <hr>
           </div>
+          <div class="detail">
             <div class="item">
               <span class="spaceItem itemSize">Dynamique</span>
               <div class="barBackground barProgress">
@@ -137,33 +140,36 @@
                 ctx2.stroke();
                 </script>
             </div> -->
-
-
-
           </div>
+        </div>
 
         <!-- Social Networks -->
-        <div class="sideCategory">
+        <div id="socialnetworks" class="sideCategory">
           <div class="subtitle">
             <img src="img/socialNetwork.png" alt="icon social network"/>
             <h3>Réseaux Sociaux</h3>
             <hr>
           </div>
-          <div class="item">
-            <img src="img/github_.png" alt="icon Github"/>
-            <span class="spaceItem"><a href="https://github.com/cyroul82" title="Compte LinkedIn" target="_blank" class="itemLink">Github.com</a></span>
+          <div class="detail">
+            <div class="item">
+              <img src="img/github_.png" alt="icon Github"/>
+              <span class="spaceItem"><a href="https://github.com/cyroul82" title="Compte LinkedIn" target="_blank" class="itemLink">Github.com</a></span>
+            </div>
+            <div class="item">
+              <img src="img/linkedin_.png" alt="icon LinkedIn"/>
+              <span class="spaceItem"> <a href="https://www.linkedin.com/in/cyril-rat-98474a83/" target="_blank" title="Compte LinkedIn" class="itemLink">LinkedIn.com</a></span>
+            </div>
           </div>
-          <div class="item">
-            <img src="img/linkedin_.png" alt="icon LinkedIn"/>
-            <span class="spaceItem"> <a href="https://www.linkedin.com/in/cyril-rat-98474a83/" target="_blank" title="Compte LinkedIn" class="itemLink">LinkedIn.com</a></span>
-          </div>
+
         </div>
 
       </aside>
+    </section>
 
+      <!-- Second part of the resume -->
       <div class="content">
         <section>
-          <article class="menu">
+          <article id="competences" class="menu">
             <div class="menuTitle">
               <h2>Compétences</h2><hr>
             </div>
@@ -182,14 +188,21 @@
                   <div class="barBackground barProgress">
                     <div class="barForeground barProgress bar50"></div>
                   </div>
-              </li>
+                </li>
 
                 <li>
                   <div class="spaceItem itemSize">PHP</div>
                   <div class="barBackground barProgress">
                     <div class="barForeground barProgress bar70"></div>
                   </div>
-              </li>
+                </li>
+
+                <li>
+                  <div class="spaceItem itemSize">Javascript</div>
+                  <div class="barBackground barProgress">
+                    <div class="barForeground barProgress bar70"></div>
+                  </div>
+                </li>
               </ul>
 
               <ul>
@@ -219,7 +232,7 @@
 
           </article>
 
-          <article class="menu">
+          <article id="formations" class="menu">
             <div class="menuTitle">
               <h2>Formations</h2><hr>
             </div>
@@ -234,9 +247,11 @@
                       <strong>Concepteur Développeur</strong>
                       <div class="secondLineItem">AFPA / Nice (Bac +4) </div>
                       <div class="subItem">
-                        Concevoir et développer une base de données.</br>
-                        Modéliser et maquetter des applications.</br>
-                        Développer des composants d’interface.</br>
+                        <ul>
+                          <li>Concevoir et développer une base de données</li>
+                          <li>Modéliser et maquetter des applications</li>
+                          <li>Développer des composants d’interface</li>
+                        </ul>
                       </div>
                     </div>
                     <div class="logo">
@@ -254,6 +269,15 @@
                     <div class="desc">
                       <strong>Formation Développeur Android</strong>
                       <div class="secondLineItem">Nanodegree Udacity Google</div>
+                      <div class="subItem">
+                        <span class="underline"> Applications Développées :</span><br>
+                        <ul>
+                          <li>Films Populaires</li>
+                          <li>Stock Hawk</li>
+                          <li>Télécommande Freebox</li>
+                          <li>Single Screen</li>
+                        </ul>
+                      </div>
                     </div>
                     <div class="logo">
                       <img src="img/android.png" alt="Android icon">
@@ -325,40 +349,93 @@
           </div>
           </article>
 
-          <article class="menu">
+          <article id="experience" class="menu">
             <div class="menuTitle">
               <h2>Expériences</h2><hr>
             </div>
 
             <div class="training sideCategory">
               <ul>
-                <li><strong>Releveur de compteurs</strong>
-                  <span class="dateItem">2013 - 2016</span>
-                  <div class="secondLineItem">Feedback Energie / Antibes</div>
+                <li>
+                  <div class="partDesc">
+                    <div class="year">
+                      <span class="dateItem"><strong>2013 - 2016</strong></span>
+                    </div>
+                    <div class="desc">
+                      <strong>Releveur de compteurs</strong>
+                      <div class="secondLineItem">Feedback Energie / Antibes</div>
+                    </div>
+                  </div>
                 </li>
 
-                <li><strong>Gérant</strong>
-                  <span class="dateItem">2011 - 2013</span>
-                  <div class="secondLineItem">Feedback Energie / Antibes</div>
+                <li>
+                  <div class="partDesc">
+                    <div class="year">
+                      <span class="dateItem"><strong>2011 - 2013</strong></span>
+                    </div>
+                    <div class="desc">
+                      <strong>Gérant</strong>
+                      <div class="secondLineItem">SARL AGM Elec / Saint-Raphaël</div>
+                    </div>
+                  </div>
                 </li>
 
-                <li>Voyage en Australie et au Japon où j'ai pu me confronter à la diversité du monde du travail et parfaire ma maîtrise de l'anglais
-                    <span class="dateItem">2008 - 2011</span>
+                <li>
+                  <div class="partDesc">
+                    <div class="year">
+                      <span class="dateItem"><strong>2008 - 2011</strong></span>
+                    </div>
+                    <div class="desc">
+                      Voyage en Australie et au Japon <br>
+                      où j'ai pu me confronter à la diversité du monde du travail<br>
+                      et parfaire ma maîtrise de l'anglais
+                    </div>
+                  </div>
+
+
                 </li>
 
-                <li><strong>Administrateur Réseau</strong>
-                  <span class="dateItem">2005 - 2007</span>
-                  <div class="secondLineItem">Raine's Foundation School / Londres</div>
+                <li>
+                  <div class="partDesc">
+                    <div class="year">
+                      <span class="dateItem"><strong>2005 - 2007</strong></span>
+                    </div>
+                    <div class="desc">
+                      <strong>Administrateur Réseau</strong>
+                      <div class="secondLineItem">Raine's Foundation School / Londres</div>
+                      <div class="subItem">
+                        <ul>
+                          <li>Responsable du parc informatique et de son budget</li>
+                          <li>Gestion du réseau et de son évolution</li>
+                          <li>Administration serveurs et support aux utilisateurs</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
 
-                <li><strong>Technicien Réseau</strong>
-                  <span class="dateItem">2002 - 2004</span>
-                  <div class="secondLineItem">Telindus / Marseille</div>
+                <li>
+                  <div class="partDesc">
+                    <div class="year">
+                      <span class="dateItem"><strong>2002 - 2004</strong></span>
+                    </div>
+                    <div class="desc">
+                      <strong>Technicien Réseau</strong>
+                      <div class="secondLineItem">Telindus / Marseille</div>
+                      <div class="subItem">
+                        <ul>
+                          <li>Responsable de l'installation des équipements</li>
+                          <li>Support aux utilisateurs</li>
+                          <li>Réalisation d'audit de réseau</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
 
-          <article class="menu">
+          <article id="interets" class="menu">
             <div class="menuTitle">
               <h2>Intérêts</h2><hr>
             </div>

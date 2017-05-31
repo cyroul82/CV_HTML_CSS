@@ -243,8 +243,11 @@ nav li {
 .partDesc .desc strong {
   text-transform: uppercase;
 }
-.partDesc .desc .subItem {
-  margin-left: 30px;
+.partDesc .desc .secondLineItem {
+  font-style: italic;
+}
+.partDesc .desc .subItem li {
+  list-style-type: disc;
 }
 .partDesc .logo {
   position: absolute;
@@ -254,6 +257,10 @@ nav li {
 .partDesc .logo img {
   width: 30px;
   height: 30px;
+}
+.underline {
+  text-decoration: underline;
+  margin-left: 20px;
 }
 .language {
   display: flex;
