@@ -1,17 +1,29 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #e8e8e8;
 }
+.container {
+  position: relative;
+}
 .sidePanel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #122134;
   -webkit-box-shadow: 0px 8px 10px 1px rgba(18, 33, 52, 0.48);
   -moz-box-shadow: 0px 8px 10px 1px rgba(18, 33, 52, 0.48);
   box-shadow: 0px 8px 10px 1px rgba(18, 33, 52, 0.48);
+  padding-bottom: 10px;
 }
 .mainTitle {
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: #e2e1e4;
   text-transform: uppercase;
@@ -21,19 +33,24 @@ body {
 .mainTitle .logo {
   margin-top: 0.5em;
   text-align: center;
-  max-width: 30%;
+  width: 100%;
 }
 .mainTitle .logo h2 {
   font-size: 1em;
+  margin: 0;
 }
 .mainTitle .logo img {
+  display: none;
   border-radius: 50%;
   width: auto;
-  max-width: 70%;
+  max-width: 20%;
 }
 .mainTitle .subtitle {
   width: 100%;
   text-align: center;
+}
+.mainTitle .subtitle h1 {
+  font-size: 1.5em;
 }
 #personal {
   color: #e2e1e4;
@@ -55,11 +72,18 @@ body {
   display: none;
 }
 .sideCategory img {
-  width: 60px;
+  width: 30px;
 }
 /*-----------------------------------Content-------------------------------------*/
+.content {
+  margin-top: 160px;
+}
 .content .menu .menuTitle {
-  text-align: center;
+  text-align: left;
+}
+.content .menu h2 {
+  margin-left: 10px;
+  margin-bottom: 0;
 }
 .content .menu .sideCategory {
   display: flex;
@@ -75,20 +99,14 @@ body {
 .content #competences li {
   display: flex;
   flex-direction: column;
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
   align-items: center;
 }
-.content #competences .barProgress {
-  width: 80%;
+.content #competences li .itemSize {
+  width: 100%;
 }
-.content #competences .barForeground {
+.content #competences li .barForeground {
   background-color: #122134;
-}
-.content #competences .barProgress {
-  border: 1px solid #122134;
-}
-.content #competences .itemSize {
-  width: 8em;
 }
 .content #formations ul {
   margin: 0;
@@ -116,8 +134,9 @@ body {
 }
 /*--------------------------Bar Style ------------------------*/
 .barProgress {
-  border: 1px solid #e2e1e4;
-  height: 12px;
+  border: 1px solid #122134;
+  height: 14px;
+  width: 100%;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -148,10 +167,10 @@ body {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 10px;
   background-color: #e2e1e4;
-  height: 10px;
+  height: 12px;
 }
-.barProgress .bar75 {
-  width: 75%;
+.barProgress .bar40 {
+  width: 40%;
 }
 .barProgress .bar50 {
   width: 50%;
@@ -162,8 +181,14 @@ body {
 .barProgress .bar70 {
   width: 70%;
 }
+.barProgress .bar75 {
+  width: 75%;
+}
 .barProgress .bar80 {
   width: 80%;
+}
+.barProgress .bar85 {
+  width: 85%;
 }
 .barProgress .bar90 {
   width: 90%;
