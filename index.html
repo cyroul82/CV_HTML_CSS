@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Cyril RAT</title>
 
-    <!-- <link rel="stylesheet" href="css/style2.css"> -->
-    <link rel="stylesheet" href="css/styleresponsive.css">
+    <link rel="stylesheet" media="only screen and (min-width:1367px)" href="css/style2.css">
+    <link rel="stylesheet" media="screen and (max-width:1366px)" href="css/styleresponsive.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
   <body>
     <div id="container">
@@ -166,76 +167,81 @@
     </section>
 
       <!-- Second part of the resume -->
+      <!-- -------------------------------- -->
+      <!-- -------------------------------- -->
+      <!-- -------------------------------- -->
+
       <div class="content">
         <section>
           <article id="competences" class="menu">
-            <div class="menuTitle">
-              <h2>Compétences</h2><hr>
-            </div>
-            <div class="professionalSkills sideCategory">
+            <div class="competenceContainer">
+              <div class="menuTitle">
+                <h2>Compétences</h2><hr>
+              </div>
+              <div class="professionalSkills sideCategory">
 
-              <ul>
-                <li>
-                  <div class="spaceItem itemSize">HTML & CSS</div>
-                  <div class="barBackground barProgress">
-                    <div class="barForeground barProgress bar85"></div>
-                  </div>
+                <ul>
+                  <li>
+                    <div class="spaceItem itemSize">HTML & CSS</div>
+                    <div class="barBackground barProgress">
+                      <div class="barForeground barProgress bar85"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                      <div class="spaceItem itemSize">Angular</div>
+                    <div class="barBackground barProgress">
+                      <div class="barForeground barProgress bar40"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="spaceItem itemSize">PHP</div>
+                    <div class="barBackground barProgress">
+                      <div class="barForeground barProgress bar70"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="spaceItem itemSize">Javascript</div>
+                    <div class="barBackground barProgress">
+                      <div class="barForeground barProgress bar70"></div>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <div class="spaceItem itemSize">Java - Android</div>
+                    <div class="barBackground barProgress">
+                      <div class="barForeground barProgress bar70"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                      <div class="spaceItem itemSize">C# .Net</div>
+                    <div class="barBackground barProgress">
+                      <div class="barForeground barProgress bar70"></div>
+                    </div>
+                </li>
+
+                  <li>
+                    <div class="spaceItem itemSize">MSSQL/MySQL</div>
+                    <div class="barBackground barProgress">
+                      <div class="barForeground barProgress bar60"></div>
+                    </div>
                 </li>
 
                 <li>
-                    <div class="spaceItem itemSize">Angular</div>
+                  <div class="spaceItem itemSize">Flex - Bootstrap</div>
                   <div class="barBackground barProgress">
                     <div class="barForeground barProgress bar40"></div>
                   </div>
-                </li>
-
-                <li>
-                  <div class="spaceItem itemSize">PHP</div>
-                  <div class="barBackground barProgress">
-                    <div class="barForeground barProgress bar70"></div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="spaceItem itemSize">Javascript</div>
-                  <div class="barBackground barProgress">
-                    <div class="barForeground barProgress bar70"></div>
-                  </div>
-                </li>
-              </ul>
-
-              <ul>
-                <li>
-                  <div class="spaceItem itemSize">Java - Android</div>
-                  <div class="barBackground barProgress">
-                    <div class="barForeground barProgress bar70"></div>
-                  </div>
-                </li>
-
-                <li>
-                    <div class="spaceItem itemSize">C# .Net</div>
-                  <div class="barBackground barProgress">
-                    <div class="barForeground barProgress bar70"></div>
-                  </div>
               </li>
+                </ul>
 
-                <li>
-                  <div class="spaceItem itemSize">MSSQL - MySQL</div>
-                  <div class="barBackground barProgress">
-                    <div class="barForeground barProgress bar60"></div>
-                  </div>
-              </li>
-
-              <li>
-                <div class="spaceItem itemSize">Flex - Bootstrap</div>
-                <div class="barBackground barProgress">
-                  <div class="barForeground barProgress bar40"></div>
-                </div>
-            </li>
-              </ul>
-
+              </div>
             </div>
-
           </article>
 
           <article id="formations" class="menu">
@@ -369,7 +375,7 @@
                     </div>
                     <div class="desc">
                       <strong>Releveur de compteurs</strong>
-                      <div class="secondLineItem">Feedback Energie / Antibes</div>
+                      <div class="secondLineItem">Feedback Energie / <span class="town">Antibes</span></div>
                     </div>
                   </div>
                 </li>
@@ -381,7 +387,7 @@
                     </div>
                     <div class="desc">
                       <strong>Gérant</strong>
-                      <div class="secondLineItem">SARL AGM Elec / Saint-Raphaël</div>
+                      <div class="secondLineItem">SARL AGM Elec / <span class="town">Saint-Raphaël</span></div>
                     </div>
                   </div>
                 </li>
@@ -392,9 +398,9 @@
                       <span class="dateItem"><strong>2008 - 2011</strong></span>
                     </div>
                     <div class="desc">
-                      Voyage en Australie et au Japon <br>
-                      où j'ai pu me confronter à la diversité du monde du travail<br>
-                      et parfaire ma maîtrise de l'anglais
+                      <strong>Voyage en Australie et au Japon</strong>
+                      <div class="secondLineItem">J'ai pu me confronter à la diversité du monde du travail<br>
+                      et parfaire ma maîtrise de l'anglais</div>
                     </div>
                   </div>
 
@@ -408,7 +414,7 @@
                     </div>
                     <div class="desc">
                       <strong>Administrateur Réseau</strong>
-                      <div class="secondLineItem">Raine's Foundation School / Londres</div>
+                      <div class="secondLineItem">Raine's Foundation School / <span class="town">Londres</span></div>
                       <div class="subItem">
                         <ul>
                           <li>Responsable du parc informatique et de son budget</li>

@@ -15,7 +15,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #122134;
+  background-color: #324665;
   -webkit-box-shadow: 0px 8px 10px 1px rgba(18, 33, 52, 0.48);
   -moz-box-shadow: 0px 8px 10px 1px rgba(18, 33, 52, 0.48);
   box-shadow: 0px 8px 10px 1px rgba(18, 33, 52, 0.48);
@@ -71,12 +71,29 @@ body {
 .sideCategory hr {
   display: none;
 }
+.sideCategory .subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 .sideCategory img {
-  width: 30px;
+  width: 30%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
+  .sideCategory img {
+    width: 20%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+  .sideCategory img {
+    width: 20%;
+  }
 }
 /*-----------------------------------Content-------------------------------------*/
 .content {
-  margin-top: 160px;
+  margin-top: 8.5em;
+  color: #324665;
 }
 .content .menu .menuTitle {
   text-align: left;
@@ -90,26 +107,64 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.content #competences ul {
-  flex: 1;
-  list-style-type: none;
-  padding: 0 20px 0 20px;
-  margin: 0;
-}
-.content #competences li {
+.content #competences {
   display: flex;
   flex-direction: column;
-  margin: 0 0 10px 0;
-  align-items: center;
 }
-.content #competences li .itemSize {
+.content #competences .professionalSkills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content #competences ul {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.content #competences ul li {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 0.5em;
+  justify-content: center;
+}
+.content #competences ul li .itemSize {
   width: 100%;
 }
-.content #competences li .barForeground {
-  background-color: #122134;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+  .content #competences ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+  .content #competences ul li .itemSize {
+    width: 35%;
+  }
+  .content .barProgress {
+    width: 25%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
+  .content #competences ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+  .content #competences ul li .itemSize {
+    width: 30%;
+  }
+  .content .barProgress {
+    width: 25%;
+  }
 }
 .content #formations ul {
-  margin: 0;
   padding: 0 1em 0 1em;
   width: 100%;
 }
@@ -122,21 +177,76 @@ body {
 }
 .content #formations .partDesc .year {
   margin-right: 1em;
+  flex: 10;
 }
 .content #formations .partDesc .desc {
-  width: 100%;
+  flex: 80;
 }
 .content #formations .partDesc .desc .secondLineItem {
   margin-bottom: 1em;
 }
+.content #formations .partDesc .logo {
+  flex: 10;
+  text-align: right;
+}
 .content #formations .partDesc .logo img {
-  max-width: 80%;
+  width: 100%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+  .content #formations ul {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .content #formations ul ul {
+    margin: 0;
+  }
+  .content #formations .partDesc .logo img {
+    width: 70%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
+  .content #formations ul {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .content #formations ul ul {
+    margin: 0;
+  }
+  .content #formations .partDesc {
+    margin: 0;
+  }
+  .content #formations .partDesc .logo img {
+    width: 70%;
+  }
+}
+.content #experience ul {
+  padding: 0;
+  width: 100%;
+}
+.content #experience ul li {
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+.content #experience .partDesc {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.content #experience .partDesc .year {
+  width: 35%;
+}
+.content #experience .partDesc .desc {
+  width: 65%;
+}
+.content #experience .partDesc .desc .secondLineItem {
+  font-style: italic;
+  margin-bottom: 0.5em;
 }
 /*--------------------------Bar Style ------------------------*/
 .barProgress {
-  border: 1px solid #122134;
-  height: 14px;
-  width: 100%;
+  border: 1px solid #b18534;
+  height: 12px;
+  width: 60%;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -166,8 +276,8 @@ body {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 10px;
-  background-color: #e2e1e4;
-  height: 12px;
+  background-color: #b18534;
+  height: 10px;
 }
 .barProgress .bar40 {
   width: 40%;
@@ -192,4 +302,8 @@ body {
 }
 .barProgress .bar90 {
   width: 90%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
 }
