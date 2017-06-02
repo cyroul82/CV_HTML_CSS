@@ -229,6 +229,13 @@ nav li {
 .training ul {
   margin: 0;
 }
+.training ul ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.training ul ul li {
+  list-style-type: disc;
+}
 .training li {
   list-style-type: none;
 }
@@ -238,16 +245,13 @@ nav li {
 }
 .partDesc .desc {
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .partDesc .desc strong {
   text-transform: uppercase;
 }
 .partDesc .desc .secondLineItem {
   font-style: italic;
-}
-.partDesc .desc .subItem li {
-  list-style-type: disc;
 }
 .partDesc .logo {
   position: absolute;
@@ -260,7 +264,6 @@ nav li {
 }
 .underline {
   text-decoration: underline;
-  margin-left: 20px;
 }
 .language {
   display: flex;
