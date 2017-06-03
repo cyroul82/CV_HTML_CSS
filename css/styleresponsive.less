@@ -80,7 +80,6 @@ strong{
 
   .subtitle {
     width: 100%;
-    position: relative;
     text-align: center;
     h1 {
       margin: 0;
@@ -90,7 +89,6 @@ strong{
 }
 
 #contact {
-  position: relative;
 }
 
 #personal{
@@ -114,7 +112,7 @@ strong{
   .dropdown-content {
     display: none;
     position: absolute;
-    left:0;
+
     min-width: 250px;
     background-color: @background_side_color;
     overflow: auto;
@@ -147,7 +145,7 @@ strong{
   }
   .show{
     display: block;
-    margin-top: 50%;
+    // margin-top: 35%;
     padding: 0 0 1em 0;
     -webkit-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
@@ -155,6 +153,7 @@ strong{
     -moz-border-radius-bottomleft: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.4);
   }
 
 }
@@ -165,17 +164,17 @@ strong{
     }
 
     .show{
-      margin-top: 40%;
+      // margin-top: 20%;
     }
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
   .sideCategory{
     img{
-      width: 30%;
+      width: 20%;
     }
     .show{
-      margin-top: 40%;
+      // margin-top: 20%;
     }
   }
 }
