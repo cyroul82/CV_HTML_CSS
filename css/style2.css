@@ -239,28 +239,27 @@ nav li {
 .training li {
   list-style-type: none;
 }
-.partDesc {
+.training li .partDesc {
   display: flex;
   position: relative;
 }
-.partDesc .desc {
+.training li .partDesc .desc {
   margin-left: 20px;
-  margin-bottom: 10px;
 }
-.partDesc .desc strong {
+.training li .partDesc .desc strong {
   text-transform: uppercase;
 }
-.partDesc .desc .secondLineItem {
-  font-style: italic;
-}
-.partDesc .logo {
+.training li .partDesc .logo {
   position: absolute;
   right: 0;
   margin-right: 30px;
 }
-.partDesc .logo img {
+.training li .partDesc .logo img {
   width: 30px;
   height: 30px;
+}
+.training li .secondLineItem {
+  font-style: italic;
 }
 .underline {
   text-decoration: underline;

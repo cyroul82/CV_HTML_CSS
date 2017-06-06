@@ -224,12 +224,17 @@ strong {
   }
 }
 .content #formations ul {
-  padding: 0 1em 1em 1em;
+  padding: 0 1em 0 1em;
+  margin-bottom: 0;
   width: 100%;
 }
 .content #formations ul li {
   list-style-type: none;
   margin-bottom: 1em;
+}
+.content #formations ul li ul {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .content #formations ul li ul li {
   list-style-type: disc;
@@ -247,7 +252,8 @@ strong {
   flex: 80;
 }
 .content #formations .partDesc .desc .secondLineItem {
-  margin-bottom: 1em;
+  font-style: italic;
+  margin-bottom: 0.5em;
 }
 .content #formations .partDesc .logo {
   flex: 10;
@@ -285,11 +291,13 @@ strong {
 }
 .content #experience ul {
   padding: 0;
-  width: 100%;
-}
-.content #experience ul li {
-  list-style-type: none;
+  margin: 0;
   margin-bottom: 1em;
+}
+.content #experience ul li ul li {
+  margin-left: 15%;
+  margin-right: 15%;
+  list-style-type: disc;
 }
 .content #experience .partDesc {
   display: flex;
@@ -305,6 +313,11 @@ strong {
 .content #experience .partDesc .desc .secondLineItem {
   font-style: italic;
   margin-bottom: 0.5em;
+}
+.content #experience .subItem p {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0;
 }
 /*--------------------------Bar Style ------------------------*/
 .barProgress {

@@ -294,41 +294,41 @@ nav {
 
    li {
      list-style-type: none;
-   }
+     .partDesc {
+       display: flex;
+       position: relative;
+       .year{
+         .dateItem{
 
- }
+         }
+       }
+       .desc {
+         margin-left: 20px;
+         strong {
+           text-transform: uppercase;
+         }
 
- .partDesc {
-   display: flex;
-   position: relative;
-   .year{
-     .dateItem{
+       }
 
+       .logo {
+        // display: none;
+         position: absolute;
+         right: 0;
+         margin-right: 30px;
+         img{
+           width: 30px;
+           height: 30px;
+         }
+       }
      }
-   }
-   .desc {
-     margin-left: 20px;
-     margin-bottom: 10px;
-     strong {
-       text-transform: uppercase;
-     }
-
-     .secondLineItem{
+     .secondLineItem {
        font-style: italic;
      }
    }
 
-   .logo {
-    // display: none;
-     position: absolute;
-     right: 0;
-     margin-right: 30px;
-     img{
-       width: 30px;
-       height: 30px;
-     }
-   }
  }
+
+
 
  .underline {
    text-decoration: underline;
