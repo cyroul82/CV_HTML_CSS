@@ -12,6 +12,9 @@ body {
   display: flex;
   padding-top: 20px;
   margin: auto;
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
 }
 p {
   text-indent: 3em;
@@ -157,6 +160,9 @@ nav li {
   background-color: #e2e1e4 !important;
   height: 10px;
 }
+.barProgress .bar40 {
+  width: 40%;
+}
 .barProgress .bar75 {
   width: 75%;
 }
@@ -171,6 +177,9 @@ nav li {
 }
 .barProgress .bar80 {
   width: 80%;
+}
+.barProgress .bar85 {
+  width: 85%;
 }
 .barProgress .bar90 {
   width: 90%;

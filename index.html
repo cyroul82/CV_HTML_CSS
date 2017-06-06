@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Cyril RAT</title>
 
-    <link rel="stylesheet" media="only screen and (min-width:737px)" href="css/style2.css">
-    <link rel="stylesheet" media="screen and (max-width:736px)" href="css/styleresponsive.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Cyril RAT">
-    <meta name="theme-color" content="#324965">
-    <meta name="msapplication-navbutton-color" content="#324965">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#324965">
-  </head>
-  <body>
-    <div id="container">
+<head>
+  <meta charset="utf-8">
+  <title>Cyril RAT</title>
 
-      <aside class="sidePanel">
-        <header>
-          <div class="mainTitle">
-            <div class="logo">
-              <img src="img/me.gif" alt="Photo Cyril RAT"/>
-              <h2>Cyril RAT</h2>
-            </div>
+  <link rel="stylesheet" media="only screen and (min-width:737px)" href="css/style2.css">
+  <link rel="stylesheet" media="screen and (max-width:736px)" href="css/styleresponsive.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jquery.lettering-0.6.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Cyril RAT">
+  <meta name="theme-color" content="#324965">
+  <meta name="msapplication-navbutton-color" content="#324965">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#324965">
+</head>
 
-            <div class="subtitle">
-              <h1>Concepteur Développeur</h1>
-            </div>
+<body>
+  <div id="container" class="animated fadeIn">
+
+    <aside class="sidePanel">
+      <header>
+        <div class="mainTitle">
+          <div class="logo">
+            <img id="myPicture" src="img/me.gif" alt="Photo Cyril RAT" />
+            <h2 class="fancy_title">Cyril RAT</h2>
           </div>
-        </header>
 
-        <section id="personal">
+          <div class="subtitle">
+            <h1 class="fancy_title">Concepteur Développeur</h1>
+          </div>
+        </div>
+      </header>
+
+      <section id="personal">
         <!-- Profil -->
         <div id="profil" class="sideCategory">
           <div class="subtitle">
-            <img src="img/profil.png" alt="icon profil"/>
+            <img src="img/profil.png" alt="icon profil" />
             <h3>Profil</h3>
             <hr>
           </div>
           <div class="detail">
             <p>
-              Je propose une approche de résolution des problèmes, associée à une bonne communication.
-              Je suis ouvert aux nouveaux défis qui me donnent l'occasion d'élargir mes compétences et d'approfondir mes connaissances.
+              Je propose une approche de résolution des problèmes, associée à une bonne communication. Je suis ouvert aux nouveaux défis qui me donnent l'occasion d'élargir mes compétences et d'approfondir mes connaissances.
             </p>
           </div>
         </div>
@@ -50,21 +56,21 @@
         <!-- Contact -->
         <div id="contact" class="sideCategory">
           <div class="subtitle">
-            <img src="img/contact.png" alt="icon contact" class="dropbtn" onclick="myFunction()"/>
+            <img src="img/contact.png" alt="icon contact" class="dropbtn" onclick="myFunction()" />
             <h3>Contact</h3>
             <hr>
           </div>
           <div id="contactDetail" class="detail dropdown-content">
             <div class="item">
-              <img src="img/telephone_.png" alt="icon telephone"/>
+              <img src="img/telephone_.png" alt="icon telephone" />
               <span class="spaceItem">06 45 24 84 03</span>
             </div>
             <div class="item">
-              <img src="img/email_.png" alt="icon telephone"/>
+              <img src="img/email_.png" alt="icon telephone" />
               <span class="spaceItem"> <a href="mailto:cyril.rat@gmail.com" title="Envoyer un email" class="itemLink">cyril.rat@gmail.com</a></span>
             </div>
             <div class="item location">
-              <img src="img/location_.png" alt="icon location"/>
+              <img src="img/location_.png" alt="icon location" />
               <span class="spaceItem">109 Rue de la soleillette <br> Les Lauriers<br>83700 Saint-Raphaël</span>
             </div>
           </div>
@@ -74,7 +80,7 @@
         <!-- Personal Skills -->
         <div id="personalskills" class="sideCategory">
           <div class="subtitle">
-            <img src="img/iconPersonalSkill.png" alt="icon contact"/>
+            <img src="img/iconPersonalSkill.png" alt="icon contact" />
             <h3>Compétences Personnelles</h3>
             <hr>
           </div>
@@ -149,86 +155,87 @@
         <!-- Social Networks -->
         <div id="socialnetworks" class="sideCategory">
           <div class="subtitle">
-            <img src="img/socialNetwork.png" alt="icon social network"/>
+            <img src="img/socialNetwork.png" alt="icon social network" />
             <h3>Réseaux Sociaux</h3>
             <hr>
           </div>
           <div class="detail">
             <div class="item">
-              <img src="img/github_.png" alt="icon Github"/>
+              <img src="img/github_.png" alt="icon Github" />
               <span class="spaceItem"><a href="https://github.com/cyroul82" title="Compte LinkedIn" target="_blank" class="itemLink">Github.com</a></span>
             </div>
             <div class="item">
-              <img src="img/linkedin_.png" alt="icon LinkedIn"/>
+              <img src="img/linkedin_.png" alt="icon LinkedIn" />
               <span class="spaceItem"> <a href="https://www.linkedin.com/in/cyril-rat-98474a83/" target="_blank" title="Compte LinkedIn" class="itemLink">LinkedIn.com</a></span>
             </div>
           </div>
 
         </div>
-        </section>
-      </aside>
+      </section>
+    </aside>
 
 
-      <!-- Second part of the resume -->
-      <div class="content">
-        <section>
-          <article id="competences" class="menu">
-            <div class="competenceContainer">
-              <div class="menuTitle">
-                <h2>Compétences</h2><hr>
-              </div>
-              <div class="professionalSkills sideCategory">
+    <!-- Second part of the resume -->
+    <div class="content">
+      <section>
+        <article id="competences" class="menu">
+          <div class="competenceContainer">
+            <div class="menuTitle">
+              <h2>Compétences</h2>
+              <hr>
+            </div>
+            <div class="professionalSkills sideCategory">
 
-                <ul>
-                  <li>
-                    <div class="spaceItem itemSize">HTML & CSS</div>
-                    <div class="barBackground barProgress">
-                      <div class="barForeground barProgress bar85"></div>
-                    </div>
-                  </li>
-
-                  <li>
-                      <div class="spaceItem itemSize">Angular</div>
-                    <div class="barBackground barProgress">
-                      <div class="barForeground barProgress bar40"></div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="spaceItem itemSize">PHP</div>
-                    <div class="barBackground barProgress">
-                      <div class="barForeground barProgress bar70"></div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div class="spaceItem itemSize">Javascript</div>
-                    <div class="barBackground barProgress">
-                      <div class="barForeground barProgress bar70"></div>
-                    </div>
-                  </li>
-                </ul>
-
-                <ul>
-                  <li>
-                    <div class="spaceItem itemSize">Java - Android</div>
-                    <div class="barBackground barProgress">
-                      <div class="barForeground barProgress bar70"></div>
-                    </div>
-                  </li>
-
-                  <li>
-                      <div class="spaceItem itemSize">C# .Net</div>
-                    <div class="barBackground barProgress">
-                      <div class="barForeground barProgress bar70"></div>
-                    </div>
+              <ul>
+                <li>
+                  <div class="spaceItem itemSize">HTML & CSS</div>
+                  <div class="barBackground barProgress">
+                    <div class="barForeground barProgress bar85"></div>
+                  </div>
                 </li>
 
-                  <li>
-                    <div class="spaceItem itemSize">MSSQL/MySQL</div>
-                    <div class="barBackground barProgress">
-                      <div class="barForeground barProgress bar60"></div>
-                    </div>
+                <li>
+                  <div class="spaceItem itemSize">Angular</div>
+                  <div class="barBackground barProgress">
+                    <div class="barForeground barProgress bar40"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="spaceItem itemSize">PHP</div>
+                  <div class="barBackground barProgress">
+                    <div class="barForeground barProgress bar70"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="spaceItem itemSize">Javascript</div>
+                  <div class="barBackground barProgress">
+                    <div class="barForeground barProgress bar70"></div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <div class="spaceItem itemSize">Java - Android</div>
+                  <div class="barBackground barProgress">
+                    <div class="barForeground barProgress bar70"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="spaceItem itemSize">C# .Net</div>
+                  <div class="barBackground barProgress">
+                    <div class="barForeground barProgress bar70"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="spaceItem itemSize">MSSQL/MySQL</div>
+                  <div class="barBackground barProgress">
+                    <div class="barForeground barProgress bar60"></div>
+                  </div>
                 </li>
 
                 <li>
@@ -236,272 +243,268 @@
                   <div class="barBackground barProgress">
                     <div class="barForeground barProgress bar40"></div>
                   </div>
-              </li>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </article>
+
+        <article id="formations" class="menu">
+          <div class="menuTitle">
+            <h2>Formations</h2>
+            <hr>
+          </div>
+          <div class="training sideCategory">
+            <ul>
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2017</strong></span>
+                  </div>
+                  <div class="desc">
+                    <strong>Concepteur Développeur</strong>
+                    <div class="secondLineItem">AFPA / Nice (Bac +4) </div>
+
+                  </div>
+
+                  <div class="logo">
+                    <img src="img/afpa.png" alt="Android icon">
+                  </div>
+                </div>
+                <ul>
+                  <li>Concevoir et développer une base de données</li>
+                  <li>Modéliser et maquetter des applications</li>
+                  <li>Développer des composants d’interface</li>
                 </ul>
 
-              </div>
-            </div>
-          </article>
+              </li>
 
-          <article id="formations" class="menu">
-            <div class="menuTitle">
-              <h2>Formations</h2><hr>
-            </div>
-            <div class="training sideCategory">
-              <ul>
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2017</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Concepteur Développeur</strong>
-                      <div class="secondLineItem">AFPA / Nice (Bac +4) </div>
-
-                    </div>
-
-                    <div class="logo">
-                      <img src="img/afpa.png" alt="Android icon">
-                    </div>
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2016</strong></span>
                   </div>
-                    <ul>
-                      <li>Concevoir et développer une base de données</li>
-                      <li>Modéliser et maquetter des applications</li>
-                      <li>Développer des composants d’interface</li>
-                    </ul>
+                  <div class="desc">
+                    <strong>Développeur Android</strong>
+                    <div class="secondLineItem">Nanodegree Udacity Google</div>
 
-                </li>
-
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2016</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Développeur Android</strong>
-                      <div class="secondLineItem">Nanodegree Udacity Google</div>
-
-                    </div>
-                    <div class="logo">
-                      <img src="img/android.png" alt="Android icon">
-                    </div>
                   </div>
-                  Applications Développées :
-                    <ul>
-                      <li>Films Populaires</li>
-                      <li>Stock Hawk</li>
-                      <li>Télécommande Freebox</li>
-                      <li>Single Screen</li>
-                    </ul>
-
-                </li>
-
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2007</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Formation et Certification CISCO CCNP</strong>
-                      <div class="secondLineItem">Ncat Ltd / Londres</div>
-                    </div>
-                    <div class="logo">
-                      <img src="img/cisco.png" alt="Cisco icon">
-                    </div>
+                  <div class="logo">
+                    <img src="img/android.png" alt="Android icon">
                   </div>
+                </div>
+                Applications Développées :
+                <ul>
+                  <li>Films Populaires</li>
+                  <li>Stock Hawk</li>
+                  <li>Télécommande Freebox</li>
+                  <li>Single Screen</li>
+                </ul>
 
-                </li>
+              </li>
 
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2005</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Formation Java Fondamentaux J2SE</strong>
-                      <div class="secondLineItem">Tech Valley Londres / Londres</div>
-                    </div>
-                    <div class="logo">
-                      <img src="img/java.png" alt="Java icon">
-                    </div>
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2007</strong></span>
                   </div>
-
-                </li>
-
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2004</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Certification CISCO CCNA</strong>
-                      <div class="secondLineItem">IUT GTR / Marseille</div>
-                    </div>
-                    <div class="logo">
-                      <img src="img/cisco.png" alt="Cisco icon">
-                    </div>
+                  <div class="desc">
+                    <strong>Formation et Certification CISCO CCNP</strong>
+                    <div class="secondLineItem">Ncat Ltd / Londres</div>
                   </div>
-                </li>
-
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2004</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>DUT Génie des Télécommunications & Réseaux</strong>
-                      <div class="secondLineItem">IUT GTR / Marseille</div>
-                    </div>
-                    <div class="logo">
-                      <img src="img/iut.png" alt="IUT GTR icon">
-                    </div>
+                  <div class="logo">
+                    <img src="img/cisco.png" alt="Cisco icon">
                   </div>
-                </li>
+                </div>
 
-              </ul>
+              </li>
+
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2005</strong></span>
+                  </div>
+                  <div class="desc">
+                    <strong>Formation Java Fondamentaux J2SE</strong>
+                    <div class="secondLineItem">Tech Valley Londres / Londres</div>
+                  </div>
+                  <div class="logo">
+                    <img src="img/java.png" alt="Java icon">
+                  </div>
+                </div>
+
+              </li>
+
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2004</strong></span>
+                  </div>
+                  <div class="desc">
+                    <strong>Certification CISCO CCNA</strong>
+                    <div class="secondLineItem">IUT GTR / Marseille</div>
+                  </div>
+                  <div class="logo">
+                    <img src="img/cisco.png" alt="Cisco icon">
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2004</strong></span>
+                  </div>
+                  <div class="desc">
+                    <strong>DUT Génie des Télécommunications & Réseaux</strong>
+                    <div class="secondLineItem">IUT GTR / Marseille</div>
+                  </div>
+                  <div class="logo">
+                    <img src="img/iut.png" alt="IUT GTR icon">
+                  </div>
+                </div>
+              </li>
+
+            </ul>
           </div>
-          </article>
+        </article>
 
-          <article id="experience" class="menu">
-            <div class="menuTitle">
-              <h2>Expériences</h2><hr>
-            </div>
+        <article id="experience" class="menu">
+          <div class="menuTitle">
+            <h2>Expériences</h2>
+            <hr>
+          </div>
 
-            <div class="training sideCategory">
-              <ul>
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2013 - 2016</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Releveur de compteurs</strong>
-                      <div class="secondLineItem">Feedback Energie / <span class="town">Antibes</span></div>
-                    </div>
-
+          <div class="training sideCategory">
+            <ul>
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2013 - 2016</strong></span>
+                  </div>
+                  <div class="desc">
+                    <strong>Releveur de compteurs</strong>
+                    <div class="secondLineItem">Feedback Energie / <span class="town">Antibes</span></div>
                   </div>
 
-                </li>
+                </div>
 
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2011 - 2013</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Gérant</strong>
-                      <div class="secondLineItem">SARL AGM Elec / <span class="town">Saint-Raphaël</span></div>
-                    </div>
+              </li>
+
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2011 - 2013</strong></span>
                   </div>
-
-                </li>
-
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2008 - 2011</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Voyage en Australie et au Japon</strong>
-                    </div>
+                  <div class="desc">
+                    <strong>Gérant</strong>
+                    <div class="secondLineItem">SARL AGM Elec / <span class="town">Saint-Raphaël</span></div>
                   </div>
-                  <div class="subItem">
-                    <p>J'ai pu me confronter à la diversité du monde du travail
-                  et parfaire ma maîtrise de l'anglais
-                    </p>
+                </div>
+
+              </li>
+
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2008 - 2011</strong></span>
                   </div>
-
-                </li>
-
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2005 - 2007</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Administrateur Réseau</strong>
-                      <div class="secondLineItem">Raine's Foundation School / <span class="town">Londres</span></div>
-                    </div>
+                  <div class="desc">
+                    <strong>Voyage en Australie et au Japon</strong>
                   </div>
+                </div>
+                <div class="subItem">
+                  <p>J'ai pu me confronter à la diversité du monde du travail et parfaire ma maîtrise de l'anglais
+                  </p>
+                </div>
 
-                  <div class="subItem">
-                    <ul>
-                      <li>Responsable du parc informatique et de son budget</li>
-                      <li>Gestion du réseau et de son évolution</li>
-                      <li>Administration serveurs et support aux utilisateurs</li>
-                    </ul>
+              </li>
+
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2005 - 2007</strong></span>
                   </div>
-                </li>
-
-                <li>
-                  <div class="partDesc">
-                    <div class="year">
-                      <span class="dateItem"><strong>2002 - 2004</strong></span>
-                    </div>
-                    <div class="desc">
-                      <strong>Technicien Réseau</strong>
-                      <div class="secondLineItem">Telindus / Marseille</div>
-                    </div>
+                  <div class="desc">
+                    <strong>Administrateur Réseau</strong>
+                    <div class="secondLineItem">Raine's Foundation School / <span class="town">Londres</span></div>
                   </div>
+                </div>
 
-                  <div class="subItem">
-                    <ul>
-                      <li>Responsable de l'installation des équipements</li>
-                      <li>Support aux utilisateurs</li>
-                      <li>Réalisation d'audit de réseau</li>
-                    </ul>
+                <div class="subItem">
+                  <ul>
+                    <li>Responsable du parc informatique et de son budget</li>
+                    <li>Gestion du réseau et de son évolution</li>
+                    <li>Administration serveurs et support aux utilisateurs</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <div class="partDesc">
+                  <div class="year">
+                    <span class="dateItem"><strong>2002 - 2004</strong></span>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </article>
+                  <div class="desc">
+                    <strong>Technicien Réseau</strong>
+                    <div class="secondLineItem">Telindus / Marseille</div>
+                  </div>
+                </div>
 
-          <article id="interets" class="menu">
-            <div class="menuTitle">
-              <h2>Intérêts</h2><hr>
-            </div>
-            <p>
-              Cillum iis aut nisi offendit. Eu summis non tempor nam e qui illum constias,
-              sunt mandaremus non ingeniis a ubi expetendis comprehenderit ne appellat qui
-              fugiat pariatur, velit fidelissimae nostrud dolore eiusmod si consequat est
-              culpa singulis e quibusdam non ullamco. Incididunt aliqua a quibusdam
-              imitarentur. Eram a e aute vidisse ubi fore do quibusdam, eram te mentitum, te
-              nulla quibusdam, mandaremus illum cernantur singulis, quem despicationes
-              appellat amet probant iis iis labore voluptate eiusmod qui commodo
-              comprehenderit e mentitum.Culpa admodum graviterque. Se noster aut cillum, nulla
-              cupidatat fabulas. Ne quorum fidelissimae ubi aute a incurreret, o eu nisi sint
-              ipsum, id dolore doctrina, sint do appellat hic dolore, legam proident quo legam
-              tamen, duis probant arbitrantur, est quo adipisicing.
-            </p>
-          </article>
+                <div class="subItem">
+                  <ul>
+                    <li>Responsable de l'installation des équipements</li>
+                    <li>Support aux utilisateurs</li>
+                    <li>Réalisation d'audit de réseau</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
 
-        </section>
+        <article id="interets" class="menu">
+          <div class="menuTitle">
+            <h2>Intérêts</h2>
+            <hr>
+          </div>
+          <p>
+            Cillum iis aut nisi offendit. Eu summis non tempor nam e qui illum constias, sunt mandaremus non ingeniis a ubi expetendis comprehenderit ne appellat qui fugiat pariatur, velit fidelissimae nostrud dolore eiusmod si consequat est culpa singulis e quibusdam
+            non ullamco. Incididunt aliqua a quibusdam imitarentur. Eram a e aute vidisse ubi fore do quibusdam, eram te mentitum, te nulla quibusdam, mandaremus illum cernantur singulis, quem despicationes appellat amet probant iis iis labore voluptate
+            eiusmod qui commodo comprehenderit e mentitum.Culpa admodum graviterque. Se noster aut cillum, nulla cupidatat fabulas. Ne quorum fidelissimae ubi aute a incurreret, o eu nisi sint ipsum, id dolore doctrina, sint do appellat hic dolore, legam
+            proident quo legam tamen, duis probant arbitrantur, est quo adipisicing.
+          </p>
+        </article>
 
+      </section>
 
-      </div>
 
     </div>
-    <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("contactDetail").classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  </div>
+  <script>
+    /* When the user clicks on the button,
+                                                                                        toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("contactDetail").classList.toggle("show");
+    }
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
       }
     }
-  }
-}
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
