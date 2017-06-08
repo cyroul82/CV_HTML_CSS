@@ -12,9 +12,6 @@ body {
   display: flex;
   padding-top: 20px;
   margin: auto;
-  -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
-  -vendor-animation-iteration-count: infinite;
 }
 p {
   text-indent: 3em;
