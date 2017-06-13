@@ -44,7 +44,6 @@ strong {
   width: 100%;
 }
 .mainTitle .logo h2 {
-  display: none;
   margin: 0;
 }
 .mainTitle .logo img {
@@ -80,21 +79,75 @@ strong {
 .sideCategory .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 250px;
+  left: 0;
+  width: 100%;
   background-color: #324665;
   overflow: auto;
   z-index: 10000;
 }
-.sideCategory .dropdown-content .item {
+.sideCategory #contactDetail .items {
+  padding-bottom: 1em;
+}
+.sideCategory #contactDetail a {
+  color: #e2e1e4;
+  text-decoration: none;
+}
+.sideCategory #contactDetail .item {
   display: flex;
   align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
 }
-.sideCategory .dropdown-content .item:nth-child(3) {
+.sideCategory #contactDetail .item:nth-child(3) {
   align-items: flex-start;
 }
-.sideCategory .dropdown-content img {
+.sideCategory #contactDetail img {
   width: 40px;
   height: 40px;
+}
+.sideCategory #profilDetail {
+  margin: 0;
+  padding: 0;
+}
+.sideCategory #profilDetail p {
+  text-indent: 3em;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
+.sideCategory #skillDetail {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.sideCategory #skillDetail .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.sideCategory #skillDetail .items .item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+.sideCategory #skillDetail .items .barBackground {
+  background-color: white;
+}
+.sideCategory #socialDetail {
+  padding-left: 10%;
+  padding-right: 10% ;
+}
+.sideCategory #socialDetail .items {
+  display: flex;
+}
+.sideCategory #socialDetail .items .item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sideCategory #socialDetail a {
+  color: #e2e1e4;
+  text-decoration: none;
 }
 .sideCategory hr {
   display: none;
@@ -110,14 +163,18 @@ strong {
 }
 .sideCategory .show {
   display: block;
-  padding: 0 0 1em 0;
+  padding: 0 0 0 0;
   -webkit-border-bottom-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-bottomright: 5px;
   -moz-border-radius-bottomleft: 5px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.4);
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.4), Direction=180, Strength=8);
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
   .sideCategory img {
@@ -134,7 +191,6 @@ strong {
 /*-----------------------------------Content-------------------------------------*/
 /*-----------------------------------Content-------------------------------------*/
 .content {
-  margin-top: 6em;
   color: #324665;
 }
 .content hr {
@@ -185,9 +241,6 @@ strong {
   flex-direction: column;
   margin-bottom: 0.5em;
   justify-content: center;
-}
-.content #competences ul li .itemSize {
-  width: 100%;
 }
 .content #competences ul:first-child {
   margin-left: 10%;
@@ -323,7 +376,7 @@ strong {
 .barProgress {
   border: 1px solid #b18534;
   height: 12px;
-  width: 60%;
+  width: 100%;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -379,14 +432,4 @@ strong {
 }
 .barProgress .bar90 {
   width: 90%;
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
-  .content {
-    margin-top: 7em;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
-  .content {
-    margin-top: 7em;
-  }
 }

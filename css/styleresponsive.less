@@ -11,7 +11,6 @@
 
 * {
   box-sizing: border-box;
-  // border: 1px solid #000;
 }
 
 body {
@@ -68,7 +67,7 @@ strong{
     // max-width: 30%;
 
     h2{
-      display: none;
+      // display: none;
       margin: 0;
     }
     img {
@@ -89,8 +88,6 @@ strong{
   }
 }
 
-#contact {
-}
 
 #personal{
   color: @font_side_color;
@@ -113,14 +110,28 @@ strong{
   .dropdown-content {
     display: none;
     position: absolute;
-
-    min-width: 250px;
+    left: 0;
+    width: 100%;
     background-color: @background_side_color;
     overflow: auto;
     z-index: 10000;
+  }
+
+  #contactDetail{
+    .items {
+      padding-bottom: 1em;
+    }
+
+    a{
+      color: @font_side_color;
+      text-decoration: none;
+    }
+
     .item {
       display: flex;
       align-items: center;
+      padding-left: 7%;
+      padding-right: 7%;
     }
     .item:nth-child(3){
       align-items: flex-start;
@@ -129,8 +140,64 @@ strong{
       width: 40px;
       height: 40px;
     }
-
   }
+
+  #profilDetail{
+    margin:0;
+    padding: 0;
+    p{
+      text-indent: 3em;
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: justify;
+    }
+  }
+
+  #skillDetail{
+    padding-left: 10%;
+    padding-right : 10%;
+    .items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 1em;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1em;
+      }
+      .barProgress{
+      }
+      .barBackground{
+        background-color: white;
+      }
+      .barForeground {
+      }
+
+    }
+  }
+
+  #socialDetail {
+    padding-left: 10%;
+    padding-right: 10% ;
+
+    .items {
+      display: flex;
+
+      .item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+      }
+    }
+    a{
+      color: @font_side_color;
+      text-decoration: none;
+    }
+  }
+
   hr {
     display: none;
 
@@ -146,15 +213,18 @@ strong{
   }
   .show{
     display: block;
-    // margin-top: 35%;
-    padding: 0 0 1em 0;
+    padding: 0 0 0 0;
     -webkit-border-bottom-right-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-bottomright: 5px;
     -moz-border-radius-bottomleft: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    box-shadow: 0 0px 8px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.4);
+    -o-box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.4);
+    box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.4);
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=rgba(0,0,0,0.4), Direction=180, Strength=8);
   }
 
 }
@@ -175,7 +245,6 @@ strong{
       width: 20%;
     }
     .show{
-      // margin-top: 20%;
     }
   }
 }
@@ -184,8 +253,9 @@ strong{
 /*-----------------------------------Content-------------------------------------*/
 /*-----------------------------------Content-------------------------------------*/
 /*-----------------------------------Content-------------------------------------*/
+
 .content {
-  margin-top:6em;
+  // margin-top:6em;
   color: @background_side_color;
   hr{
     display: none;
@@ -246,19 +316,11 @@ strong{
        justify-content: center;
 
        .itemSize {
-         width: 100%;
+        //  width: 100%;
        }
 
-       .barProgress {
 
-       }
-       .barForeground{
-        //  background-color:@background_side_color;
-       }
-       .barProgress{
-         // border:  1px solid @background_side_color;
-         // background-color:@background_side_color;
-       }
+
     }
   }
 
@@ -445,7 +507,7 @@ ul:last-child{
 .barProgress {
   border: 1px solid @progresscolor;
   height:12px;
-  width: 60%;
+  width: 100%;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -510,12 +572,8 @@ ul:last-child{
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
-  .content {
-    margin-top:7em;
-  }
+
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
-  .content {
-    margin-top:7em;
-  }
+
 }
