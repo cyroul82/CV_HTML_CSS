@@ -1,6 +1,6 @@
-$(window).resize(function() {
-  location.reload();
-});
+//$(window).resize(function() {
+ // location.reload();
+//});
 $(document).ready(function() {
   $("#myPicture").click(function() {
     $("#container").addClass("animated hinge")
